@@ -1,0 +1,2 @@
+import astra
+astra_double = astra(volume)

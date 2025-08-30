@@ -1,0 +1,50 @@
+{
+    "exp_name": "WCRR-CNN_f_30_b_5_anderson_lrx0.2",
+    "log_dir": "exps/",
+    "multi_convolution": {
+        "num_channels": [
+            1,
+            4,
+            8,
+            64
+        ],
+        "size_kernels": [
+            3,
+            3,
+            3
+        ]
+    },
+    "optimization": {
+        "lr_activation": 0.01,
+        "lr_conv": 0.001,
+        "lr_spline_scaling": 0.001
+    },
+    "sigma": [
+        0,
+        30
+    ],
+    "sigma_test": [
+        5,
+        15,
+        25
+    ],
+    "spline_scaling": {
+        "num_activations": 1,
+        "num_knots": 11,
+        "spline_init": 5.0,
+        "x_max": 30.0,
+        "x_min": 0.0
+    },
+    "training_options": {
+        "b_max_iter": 5,
+        "batch_size": 64,
+        "decay_frequency": 5000,
+        "f_max_iter": 30,
+        "gamma_scheduler": 0.75,
+        "n_batches": 25000,
+        "patch_size": 30,
+        "testing_step": 1000,
+        "train_data_file": "train.h5",
+        "val_data_file": "test.h5"
+    }
+}
